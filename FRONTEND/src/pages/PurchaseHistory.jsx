@@ -5,7 +5,7 @@ const PurchaseHistory = () => {
   const [compras, setCompras] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/compras')
+    fetch('https://virtualstorebend.onrender.com/compras')
       .then(res => res.json())
       .then(data => {
         // Convertir carrito a array si es string

@@ -58,7 +58,7 @@ const Payment = () => {
       fecha: new Date().toISOString(),
     };
     // Guardar en backend Flask
-    await fetch('http://localhost:5000/compras', {
+    await fetch('https://virtualstorebend.onrender.com/compras', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(nuevaCompra),
