@@ -1,0 +1,76 @@
+.navbar-corp {
+  width: 100%;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo h1 {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-link:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.contact-button, .data-button {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-button:hover, .data-button:hover {
+  background: #fff;
+  color: var(--color-primary);
+}
+
+@media (max-width: 700px) {
+  .navbar-corp {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
