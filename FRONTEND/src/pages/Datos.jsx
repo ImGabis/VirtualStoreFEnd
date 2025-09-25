@@ -18,7 +18,7 @@ const Datos = () => {
 
   const cargarDatos = () => {
     setLoading(true);
-    fetch('https://virtualstorebend.onrender.com/compras')
+    fetch('https://virtualstorebend.onrender.com/grafica-ventas-articulos')
       .then(res => res.json())
       .then(data => {
         if (metrica === 'cliente') {
