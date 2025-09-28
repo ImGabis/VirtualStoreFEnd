@@ -8,9 +8,30 @@ const FooterCorp = () => (
         Contacto: contacto@artediverso.com | Tel: +57 123 456 7890
       </div>
       <div className="footer-social">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-social-btn"
+        >
+          Facebook
+        </a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-social-btn"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-social-btn"
+        >
+          Twitter
+        </a>
       </div>
       <div className="footer-copyright">
         &copy; {new Date().getFullYear()} ArteDiverso Group. Todos los derechos reservados.
